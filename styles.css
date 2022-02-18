@@ -1,0 +1,62 @@
+:root {
+  --text: #000;
+  --bg: #ffbf00;
+  --btn-bg: #800080;
+  --secondaryText: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Nerko One", cursive;
+}
+
+h1 {
+    font-size: 80px;
+    margin-bottom: 0; 
+    text-transform: uppercase;
+}
+
+.container {
+    height: 100vh; 
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+
+}
+#board {
+    width: 60vw; 
+    display: flex;
+    flex-wrap: wrap; 
+    font-size: 100px;  
+    margin-top: 40px;
+}
+
+.square {
+    height: 20vh;
+    width: 20vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+
+}
+#restart {
+    padding: 10px 20px;
+    background-color:var(--btn-bg);
+    border: none; 
+    border-radius: 20px; 
+    color: var(--secondaryText);
+    font-size: 20px;
+    font-weight: bold;
+    cursor:pointer;
+    text-transform: uppercase;
+}
